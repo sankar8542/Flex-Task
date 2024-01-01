@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-eqiv="X-VA-compatible" content="IE=Rdge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Flex</title>
+<style>
+    <!-- #main { -->
+  <!-- width: 300px; -->
+  <!-- height: 300px; -->
+  <!-- border: 1px solid black; -->
+  <!-- display: flex; -->
+<!-- } -->
+
+<!-- #main div { -->
+  <!-- -ms-flex: 1;  /* IE 10 */   -->
+  <!-- flex: 1; -->
+<!-- } -->
+
+<!-- .sec { -->
+  <!-- width: 400px; -->
+  <!-- height: 400px; -->
+  <!-- border: 1px solid #c3c3c3; -->
+  <!-- display: flex; -->
+  <!-- flex-direction: row-reverse; -->
+<!-- } -->
+
+<!-- .sec div { -->
+  <!-- width: 50px; -->
+  <!-- height: 50px; -->
+<!-- } -->
+<!-- #connect { -->
+  <!-- width: 200px; -->
+  <!-- height: 200px; -->
+  <!-- border: 1px solid #c3c3c3; -->
+  <!-- display: flex; -->
+  <!-- flex-flow: row-reverse wrap; -->
+<!-- } -->
+
+<!-- #connect div { -->
+  <!-- width: 50px; -->
+  <!-- height: 50px; -->
+<!-- } -->
+.sec {
+  display: flex;
+  background-color: #f1f1f1;
+}
+
+.sec > div {
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  background-color: DodgerBlue;
+}
+
+.main > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.flex1 {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: DodgerBlue;
+}
+
+.flex1> div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.connect {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: RED;
+}
+
+.connect > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.nav {
+  display: flex;
+  height: 200px;
+  align-items: center;
+  background-color: DodgerBlue;
+}
+
+.nav > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.comment {
+  display: flex;
+  height: 200px;
+  align-items: stretch;
+  background-color: DodgerBlue;
+}
+
+.comment > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.element {
+  display: flex;
+  height: 200px;
+  align-items: baseline;
+  background-color: DodgerBlue;
+}
+
+.element > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.sky {
+  display: flex;
+  height: 600px;
+  flex-wrap: wrap;
+  align-content: space-between;
+  overflow: scroll;
+  background-color: DodgerBlue;
+}
+
+.sky > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+</style>
+</head>
+<body>
+   <h1>The flex Property</h1>
+
+<div id="main">
+  <div style="background-color:coral;">RED</div>
+  <div style="background-color:lightblue;">BLUE</div>  
+  <div style="background-color:lightgreen;">Green div with more content.</div>
+</div><br><br>
+
+<div class="sec">
+  <div style="background-color:coral;">A</div>
+  <div style="background-color:lightblue;">B</div>
+  <div style="background-color:khaki;">C</div>
+  <div style="background-color:pink;">D</div>
+  <div style="background-color:lightgrey;">E</div>
+  <div style="background-color:lightgreen;">F</div>
+</div>
+
+  <div id="connect">
+  <div style="background-color:coral;">A</div>
+  <div style="background-color:lightblue;">B</div>
+  <div style="background-color:khaki;">C</div>
+  <div style="background-color:pink;">D</div>
+  <div style="background-color:lightgrey;">E</div>
+  <div style="background-color:lightgreen;">F</div>
+</div>
+
+
+<h1>Flexible Items</h1>
+
+<div class="sec">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div> 
+  <div>4</div>
+</div>
+
+<div class="main">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+</div><br><br>
+
+<div class="flex1">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+</div><br><br><br>
+
+<div class="connect">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>  
+  <div>7</div>
+  <div>8</div>
+  <div>9</div>  
+  <div>10</div>
+  <div>11</div>
+  <div>13</div>  
+  <div>14</div>  
+  <div>15</div>  
+  <div>16</div>  
+</div>
+
+<div class="nav">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+</div><br><br><br>
+
+
+<div class="comment">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+</div><br><br><br>
+
+<div class="element">
+  <div><h1>1</h1></div>
+  <div><h6>2</h6></div>
+  <div><h3>3</h3></div>  
+  <div><small>4</small></div>  
+</div><br><br><br>
+
+<div class="sky">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>  
+  <div>7</div>
+  <div>8</div>
+  <div>9</div>  
+  <div>10</div>
+  <div>11</div>
+  <div>12</div>  
+  <div>13</div>  
+  <div>14</div>  
+  <div>15</div>  
+</div>
+
+
+
+
+
+</body>
+</html>
